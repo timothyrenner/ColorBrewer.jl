@@ -1,5 +1,12 @@
 using ColorBrewerJl
 using Base.Test
 
-# write your own tests here
-@test 1 == 1
+### Test 1: ArgumentError thrown when the scheme is invalid.
+@test_throws ArgumentError palette("NOTASCHEME", 5)
+
+### Test 2: ArgumentError thrown when the number of categories for a scheme
+#   is invalid.
+@test_throws ArgumentError palette("Greens", 2)
+
+### Test 3: Function runs correctly.
+palette("Pastel1", 6)
