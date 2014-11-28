@@ -7,6 +7,14 @@ For more information on color brewer, see http://colorbrewer2.org/.
 
 The color brewer palette collection was originally designed for maps, but is also useful for quickly generating nice colors for any kind of plot.
 
+## Setup
+
+Add the package with
+
+```julia
+Pkg.clone("git://github.com/timothyrenner/ColorBrewerJl.jl.git");
+```
+
 ## Usage
 
 The module contains one function, `palette`, which takes a scheme name and an integer for the number of colors in the palette.
@@ -68,6 +76,8 @@ The `Set2`, `Accent`, `Dark2`, and `Pastel2` schemes can have between 3 and 8 co
 For example, to obtain a five color sequential green scheme, call
 
 ```julia
+	using ColorBrewerJl
+
     greens = palette("Greens", 5);
 ```
 Pretty simple stuff.
