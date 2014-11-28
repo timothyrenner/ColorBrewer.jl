@@ -6,11 +6,11 @@ using JSON
 # The colorbrewer.json file contains the schemes, 
 # and was obtained from colorbrewer2.org.
 # The contents of that file are covered under the Apache License 2.0, included
-# in this distribution under src/data.
+# in this distribution under data/.
 colorSchemes = JSON.parsefile(
     Pkg.dir("ColorBrewerJl") * "/data/colorbrewer.json");
 
-# Creates a color palette based on the colorbrewer2 color schema.
+# Creates a color palette based on the colorbrewer2 color schemes.
 #
 # Args:
 #   schemeName: The name of the scheme. The schemes are as follows:
@@ -20,7 +20,7 @@ colorSchemes = JSON.parsefile(
 #       - diverging: Spectral, RdYlGn, RdBu, PiYG, PRGn, RdYlBu, BrBG, RdGy, 
 #           PuOr
 #       - qualitative: Set1, Set2, Set3, Accent, Dark2, Paired, Pastel1, Pastel2
-#   n: The number of categories in the palette. Must be within the proper range.
+#   n: The number of colors in the palette. Must be within the proper range.
 #       The range for each type is as follows:
 #       - sequential: between 3 and 9, inclusive
 #       - diverging: between 3 and 11, inclusive
@@ -30,7 +30,7 @@ colorSchemes = JSON.parsefile(
 #
 # Throws:
 #   ArgumentError: If the scheme name is invalid.
-#   ArgumentError: If the number of classes in the palette is invalid.
+#   ArgumentError: If the number of colors in the palette is invalid.
 #
 # Returns: An array of RGBs (from the Color package).
 function palette(schemeName::String, n::Integer)
@@ -40,7 +40,7 @@ function palette(schemeName::String, n::Integer)
     
     if !haskey(colorSchemes[schemeName], string(n))
         throw(ArgumentError(
-            "Scheme $schemeName is undefined for $n categories."));
+            "Scheme $schemeName is undefined for $n colors."));
     end #Close if statement validating n for the scheme name.
     
     return [color(s) for s in colorSchemes[schemeName][string(n)]];
