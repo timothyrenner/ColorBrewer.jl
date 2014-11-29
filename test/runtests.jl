@@ -1,4 +1,4 @@
-using ColorBrewerJl
+using ColorBrewer
 using Base.Test
 
 ### Test 1: ArgumentError thrown when the scheme is invalid.

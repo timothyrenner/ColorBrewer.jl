@@ -8,7 +8,7 @@ using JSON
 # The contents of that file are covered under the Apache License 2.0, included
 # in this distribution under data/.
 colorSchemes = JSON.parsefile(
-    Pkg.dir("ColorBrewerJl") * "/data/colorbrewer.json");
+    Pkg.dir("ColorBrewer") * "/data/colorbrewer.json");
 
 # Creates a color palette based on the colorbrewer2 color schemes.
 #
