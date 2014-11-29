@@ -1,7 +1,7 @@
-# ColorBrewerJl
+# ColorBrewer.jl
 
 A small library for generating color brewer color palettes.
-For more information on color brewer, see http://colorbrewer2.org/. 
+For more information on color brewer, see http://colorbrewer2.org/.
 
 ## About
 
@@ -12,7 +12,7 @@ The color brewer palette collection was originally designed for maps, but is als
 Add the package with
 
 ```julia
-Pkg.clone("git://github.com/timothyrenner/ColorBrewerJl.jl.git");
+Pkg.clone("git://github.com/timothyrenner/ColorBrewer.jl.git");
 ```
 
 ## Usage
@@ -54,7 +54,7 @@ The available diverging color schemes are:
 * PRGn
 * RdYlBu
 * BrBG
-* RdGy 
+* RdGy
 * PuOr
 
 The number of colors a qualitative color scheme can have depends on the scheme.
@@ -76,7 +76,7 @@ The `Set2`, `Accent`, `Dark2`, and `Pastel2` schemes can have between 3 and 8 co
 For example, to obtain a five color sequential green scheme, call
 
 ```julia
-	using ColorBrewerJl
+	using ColorBrewer
 
     greens = palette("Greens", 5);
 ```
