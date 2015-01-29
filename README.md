@@ -89,3 +89,7 @@ For example, to obtain a five color sequential green scheme, call
 Pretty simple stuff.
 
 If the `palette` function is passed an invalid scheme or number of colors, it throws an `ArgumentError`.
+
+## Thanks
+
+Huge thanks to ikirill for providing the color scheme previews!
