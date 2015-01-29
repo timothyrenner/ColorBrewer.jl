@@ -25,49 +25,55 @@ The schemes are broken up into three categories based on the type of data you wa
 All sequential color schemes can have between 3 and 9 colors (inclusive).
 The available sequential color schemes are:
 
-* Blues
-* Oranges
-* Greens
-* Reds
-* Purples
-* Greys
-* OrRd
-* GnBu
-* PuBu
-* PuRd
-* BuPu
-* BuGn
-* YlGn
-* RdPu
-* YlOrBr
-* YlGnBu
-* YlOrRd
-* PuBuGn
+| Name    | Example                            |
+|---------|------------------------------------|
+| Blues   | ![Blues](images/Blues.png "Blues") |
+| Oranges | ![Oranges](images/Oranges.png "Oranges") |
+| Greens  | ![Greens](images/Greens.png "Greens") |
+| Reds    | ![Reds](images/Reds.png "Reds") |
+| Purples | ![Purples](images/Purples.png "Purples") |
+| Greys   | ![Greys](images/Greys.png "Greys") |
+| OrRd    | ![OrRd](images/OrRd.png "OrRd") |
+| GnBu    | ![GnBu](images/GnBu.png "GnBu") |
+| PuBu    | ![PuBu](images/PuBu.png "PuBu") |
+| PuRd    | ![PuRd](images/PuRd.png "PuRd") |
+| BuPu    | ![BuPu](images/BuPu.png "BuPu") |
+| BuGn    | ![BuGn](images/BuGn.png "BuGn") |
+| YlGn    | ![YlGn](images/YlGn.png "YlGn") |
+| RdPu    | ![RdPu](images/RdPu.png "RdPu") |
+| YlOrBr  | ![YlOrBr](images/YlOrBr.png "YlOrBr") |
+| YlGnBu  | ![YlGnBu](images/YlGnBu.png "YlGnBu") |
+| YlOrRd  | ![YlOrRd](images/YlOrRd.png "YlOrRd") |
+| PuBuGn  | ![PuBuGn](images/PuBuGn.png "PuBuGn") |
 
 All diverging color schemes can have between 3 and 11 colors (inclusive).
 The available diverging color schemes are:
 
-* Spectral
-* RdYlGn
-* RdBu
-* PiYG
-* PRGn
-* RdYlBu
-* BrBG
-* RdGy
-* PuOr
+| Name     | Example                                     |
+| -------- | ------------------------------------------- |
+| Spectral | ![Spectral](images/Spectral.png "Spectral") |
+| RdYlGn   | ![RdYlGn](images/RdYlGn.png "RdYlGn")       |
+| RdBu     | ![RdBu](images/RdBu.png "RdBu")             |
+| PiYG     | ![PiYG](images/PiYG.png "PiYG")             |
+| PRGn     | ![PRGn](images/PRGn.png "PRGn")             |
+| RdYlBu   | ![RdYlBu](images/RdYlBu.png "RdYlBu")       |
+| BrBG     | ![BrBG](images/BrBG.png "BrBG")             |
+| RdGy     | ![RdGy](images/RdGy.png "RdGy")             |
+| PuOr     | ![PuOr](images/PuOr.png "PuOr")             |
 
 The number of colors a qualitative color scheme can have depends on the scheme.
 The available qualitative color schemes are:
 
-* Set1
-* Set2
-* Set3
-* Accent
-* Dark2
-* Paired
-* Pastel1
-* Pastel2
+| Name | Example                         |
+| ---- | ------------------------------- |
+| Set1 | ![Set1](images/Set1.png "Set1") |
+| Set2 | ![Set2](images/Set2.png "Set2") |
+| Set3 | ![Set3](images/Set3.png "Set3") |
+| Accent | ![Accent](images/Accent.png "Accent") |
+| Dark2 | ![Dark2](images/Dark2.png "Dark2") |
+| Paired | ![Paired](images/Paired.png "Paired") |
+| Pastel1 | ![Pastel1](images/Pastel1.png "Pastel1") |
+| Pastel2 | ![Pastel2](images/Pastel2.png "Pastel2") |
 
 The `Paired` and `Set3` schemes can have between 3 and 12 colors (inclusive).
 The `Pastel1` and `Set1` schemes can have between 3 and 9 colors (inclusive).
