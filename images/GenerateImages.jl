@@ -20,10 +20,9 @@ function do_palette(name="Blues", size::Int=9)
 end
 
 function main()
-  for name in ["Blues","Oranges","Greens","Reds","Purples","Greys","OrRd","GnBu","PuBu","PuRd","BuPu","BuGn","YlGn","RdPu","YlOrBr","YlGnBu","PuBuGn"]
+  for name in ["Blues","Oranges","Greens","Reds","Purples","Greys","OrRd","GnBu","PuBu","PuRd","BuPu","BuGn","YlGn","RdPu","YlOrBr","YlGnBu","YlOrRd","PuBuGn"]
     do_palette(name, 9)
   end
-  do_palette("YlOrRd", 8)
   for name in ["Spectral","RdYlGn","RdBu","PiYG","PRGn","RdYlBu","BrBG","RdGy","PuOr"]
     do_palette(name, 11)
   end
