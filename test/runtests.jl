@@ -10,3 +10,6 @@ using Base.Test
 
 ### Test 3: Function runs correctly.
 palette("Pastel1", 6)
+
+### Test 4: Validate 9-color YlOrRd palette
+palette("YlOrRd", 9)
