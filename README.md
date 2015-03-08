@@ -9,7 +9,13 @@ The color brewer palette collection was originally designed for maps, but is als
 
 ## Setup
 
-Add the package with
+This package is now registered. Add it with
+
+```julia
+Pkg.add("ColorBrewer");
+```
+
+You can also add it with
 
 ```julia
 Pkg.clone("git://github.com/timothyrenner/ColorBrewer.jl.git");
