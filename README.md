@@ -26,9 +26,31 @@ Pkg.clone("git://github.com/timothyrenner/ColorBrewer.jl.git");
 The module contains one function, `palette`, which takes a scheme name and an integer for the number of colors in the palette.
 It returns an array of `RGB` values, which are defined in the [Color.jl](https://github.com/JuliaLang/Color.jl) package.
 
+For example, to obtain a five color sequential green scheme, call
+
+```julia
+    using ColorBrewer
+
+    greens = palette("Greens", 5);
+```
+Pretty simple stuff.
+
+It can drop right into [Gadfly](https://github.com/dcjones/Gadfly.jl) plots.
+
+```julia
+    using Gadfly
+
+    p = plot([x -> sin(n*x) for n in 1:3], 0, 25, 
+             Scale.color_discrete_manual(greens[3:5]...))
+```
+
+![Example](images/color_example.png)
+
+If the `palette` function is passed an invalid scheme or number of colors, it throws an `ArgumentError`.
+
 The schemes are broken up into three categories based on the type of data you want to show: sequential, diverging, and qualitative.
 
-All sequential color schemes can have between 3 and 9 colors (inclusive).
+All sequential color schemes can have between 3 and 9 colors.
 The available sequential color schemes are:
 
 | Name    | Example                            |
@@ -52,7 +74,7 @@ The available sequential color schemes are:
 | YlOrRd  | ![YlOrRd](images/YlOrRd.png "YlOrRd") |
 | PuBuGn  | ![PuBuGn](images/PuBuGn.png "PuBuGn") |
 
-All diverging color schemes can have between 3 and 11 colors (inclusive).
+All diverging color schemes can have between 3 and 11 colors.
 The available diverging color schemes are:
 
 | Name     | Example                                     |
@@ -81,20 +103,10 @@ The available qualitative color schemes are:
 | Pastel1 | ![Pastel1](images/Pastel1.png "Pastel1") |
 | Pastel2 | ![Pastel2](images/Pastel2.png "Pastel2") |
 
-The `Paired` and `Set3` schemes can have between 3 and 12 colors (inclusive).
-The `Pastel1` and `Set1` schemes can have between 3 and 9 colors (inclusive).
-The `Set2`, `Accent`, `Dark2`, and `Pastel2` schemes can have between 3 and 8 colors (inclusive).
+The `Paired` and `Set3` schemes can have between 3 and 12 colors.
+The `Pastel1` and `Set1` schemes can have between 3 and 9 colors.
+The `Set2`, `Accent`, `Dark2`, and `Pastel2` schemes can have between 3 and 8 colors.
 
-For example, to obtain a five color sequential green scheme, call
-
-```julia
-	using ColorBrewer
-
-    greens = palette("Greens", 5);
-```
-Pretty simple stuff.
-
-If the `palette` function is passed an invalid scheme or number of colors, it throws an `ArgumentError`.
 
 ## Thanks
 
