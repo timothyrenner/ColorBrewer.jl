@@ -1,4 +1,4 @@
-using Color, ColorBrewer
+using Colors, ColorBrewer
 
 function do_palette(name="Blues", size::Int=9)
   width, height = "1cm", "0.5cm"
