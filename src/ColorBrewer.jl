@@ -1,6 +1,6 @@
 module ColorBrewer
 
-using Color
+using Colors
 using JSON
 
 # The colorbrewer.json file contains the schemes,
@@ -32,7 +32,7 @@ colorSchemes = JSON.parsefile(
 #   ArgumentError: If the scheme name is invalid.
 #   ArgumentError: If the number of colors in the palette is invalid.
 #
-# Returns: An array of RGBs (from the Color package).
+# Returns: An array of RGBs (from the Colors package).
 function palette(schemeName::String, n::Integer)
     if !haskey(colorSchemes, schemeName)
         throw(ArgumentError("Scheme $schemeName is undefined."));
@@ -43,7 +43,7 @@ function palette(schemeName::String, n::Integer)
             "Scheme $schemeName is undefined for $n colors."));
     end #Close if statement validating n for the scheme name.
 
-    return [color(s) for s in colorSchemes[schemeName][string(n)]];
+    return [parse(Colorant, s) for s in colorSchemes[schemeName][string(n)]];
 end
 
 export palette
