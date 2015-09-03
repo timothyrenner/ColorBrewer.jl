@@ -24,7 +24,7 @@ Pkg.clone("git://github.com/timothyrenner/ColorBrewer.jl.git");
 ## Usage
 
 The module contains one function, `palette`, which takes a scheme name and an integer for the number of colors in the palette.
-It returns an array of `RGB` values, which are defined in the [Color.jl](https://github.com/JuliaLang/Color.jl) package.
+It returns an array of `RGB` values, which are defined in the [ColorTypes.jl](https://github.com/JuliaGraphics/ColorTypes.jl)package.
 
 For example, to obtain a five color sequential green scheme, call
 
