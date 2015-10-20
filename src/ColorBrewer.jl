@@ -33,7 +33,7 @@ colorSchemes = JSON.parsefile(
 #   ArgumentError: If the number of colors in the palette is invalid.
 #
 # Returns: An array of RGBs (from the Colors package).
-function palette(schemeName::String, n::Integer)
+function palette(schemeName::AbstractString, n::Integer)
     if !haskey(colorSchemes, schemeName)
         throw(ArgumentError("Scheme $schemeName is undefined."));
     end #Close if statement validating scheme name.
