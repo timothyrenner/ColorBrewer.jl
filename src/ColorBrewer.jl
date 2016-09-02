@@ -7,10 +7,10 @@ using JSON
 # and was obtained from colorbrewer2.org.
 # The contents of that file are covered under the Apache License 2.0, included
 # in this distribution under data/.
+# Here, dirname is used to accommodate non-standard package directory
+# configurations (as well as standard ones, obviously).
 colorSchemes = JSON.parsefile(
     dirname(@__FILE__) * "/../data/colorbrewer.json");
-    # Temporarily commented out - will delete on confirming dirname fix.
-    # Pkg.dir("ColorBrewer") * "/data/colorbrewer.json");
 
 # Creates a color palette based on the colorbrewer2 color schemes.
 #
