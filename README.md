@@ -1,5 +1,7 @@
 # ColorBrewer.jl
 
+[![](https://travis-ci.org/timothyrenner/ColorBrewer.jl.svg?branch=master)](https://travis-ci.org/timothyrenner/ColorBrewer.jl)
+
 A small library for generating color brewer color palettes.
 For more information on color brewer, see http://colorbrewer2.org/.
 
