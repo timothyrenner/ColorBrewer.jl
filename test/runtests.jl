@@ -1,5 +1,5 @@
 using ColorBrewer
-using Base.Test
+using Test
 
 ### Test 1: ArgumentError thrown when the scheme is invalid.
 @test_throws ArgumentError palette("NOTASCHEME", 5)
